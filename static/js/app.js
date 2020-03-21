@@ -1,7 +1,7 @@
 // UFO Sightings - Javascript
 
 // Variable Declaration
-let tbody = d3.select("tbody");
+var tbody = d3.select("tbody");
 // From data.js
 var tableData = data;
 
@@ -12,11 +12,11 @@ function buildTable(data){
     // Loop Through `data` 
     data.forEach((dataRow) => {
         // Append Table Row `tr` to the Table Body `tbody`
-        let row = tbody.append("tr");
+        var row = tbody.append("tr");
         // `Object.values` & `forEach` to Iterate Through Values
         Object.values(dataRow).forEach((val) => {
             // Append a Cell to the Row for Each Value
-            let cell = row.append("td");
+            var cell = row.append("td");
             cell.text(val);
         });
     })
@@ -26,8 +26,8 @@ function handleClick(){
     // Prevents the Page from Refreshing
     d3.event.preventDefault();
     // Select HTML Input Element & Get the Value Property of that Input Element
-    let date = d3.select("#datetime").property("value");
-    let filterData = tableData;
+    var date = d3.select("#datetime").property("value");
+    var filterData = tableData;
 
     // Check if a Date was Entered & Filter Data Using that Date;
     if(date) {

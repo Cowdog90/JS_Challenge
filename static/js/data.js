@@ -1,6 +1,6 @@
 // UFO Sightings - Dataset 
 
-let data = [{
+var data = [{
     datetime: "1/1/2010",
     city: "benton",
     state: "ar",
