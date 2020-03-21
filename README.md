@@ -1,6 +1,6 @@
 # UFO-Sightings
 
-https://bigbluey.github.io/UFO-Sightings/
+https://Cowdog90.github.io/JS_Challenge/
 
 ## Background
 
